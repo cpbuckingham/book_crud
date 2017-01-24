@@ -1,7 +1,7 @@
 {
-  "name": "glimpse",
+  "name": "books",
   "version": "1.0.0",
-  "description": "have a healthy life with this app",
+  "description": "galvanize books",
   "main": "server.js",
   "directories": {
     "test": "test"

@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- views/partials/head.ejs -->
+<title>Books</title>
+
+<meta charset="UTF-8">
+<head>
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+</head>
+
+
+<div class="container">
+  <div class="row"
+<div class="col-md-1">
+<h2>Books</h2>
+<hr>
+<% books.forEach(function (book) { %>
+  <div class="card">
+  <div class="card-block">
+    <h4 class="card-title"><%=book.title %></h4>
+    <h6 class="card-subtitle mb-2 text-muted"><%=book.genre%></h6>
+    <p class="card-text"><%=book.description %></p>
+    <a href="/books/<%= book.id %>" class="card-link">Learn more</a>
+  </div>
+</div>
+<% }) %>
+</div>
+</div>
+</div>

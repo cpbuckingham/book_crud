@@ -7,16 +7,22 @@
 <meta charset="UTF-8">
 <head>
 <!-- CSS (load bootstrap from a CDN) -->
-<style>
-a{
-  margin-top: 400px;
-}
-</style>
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
 </head>
 
 
-<center>
-<a class="btn btn-success" href="/books" role="button">All Books</a>
-<a class="btn btn-warning" href="/authors" role="button">All Authors</a>
-</center>
+<div class="container">
+  <div class="row"
+<div class="col-md-1">
+<h2><%=author.first_name%> <%=author.last_name%></h2>
+<hr>
+  <div class="card">
+  <div class="card-block">
+    <h6 class="card-subtitle mb-2 text-muted"><%=author.auth_url%></h6>
+    <p class="card-text"><%=author.auth_bio %></p>
+    <a href="/" class="card-link">Home</a>
+  </div>
+</div>
+</div>
+</div>
+</div>

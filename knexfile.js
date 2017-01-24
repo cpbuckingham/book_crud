@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      database: 'glimpse-dev',
+      database: 'books-dev',
       host: 'localhost'
     }
   },
@@ -13,7 +13,7 @@ module.exports = {
   test: {
     client: 'pg',
     connection: {
-      database: 'glimpse-test',
+      database: 'books-test',
       host: 'localhost',
     }
   },

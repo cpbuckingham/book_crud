@@ -17,11 +17,8 @@ const cookieSession = require('cookie-session');
 const methodOverride = require('method-override');
 
 // Routes
-const users = require('./routes/users');
-const auth = require('./routes/auth');
-const posts = require('./routes/posts');
-const about = require('./routes/about');
-const blog = require('./routes/blog');
+const books = require('./routes/books');
+const authors = require('./routes/authors');
 
 
 // Use Middlewares
@@ -36,11 +33,8 @@ app.use(cookieSession({
 app.use(require('flash')());
 
 // Use Routes
-app.use('/users', users);
-app.use('/auth', auth);
-app.use('/posts', posts);
-app.use('/about', about);
-app.use('/blog', blog);
+app.use('/books', books);
+app.use('/authors', authors);
 
 app.listen(port, function () {
   console.log('hello from', port);
